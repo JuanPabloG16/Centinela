@@ -57,7 +57,7 @@ if(!$connection)
             echo "<b><h3>Hemos conectado al servidor</h3></b>" ;
         }
         //indicamos el nombre de la base datos
-        $datab = "dbformulario";
+        $datab = "prueba";
         //indicamos selecionar ala base datos
         $db = mysqli_select_db($connection,$datab);
 
@@ -76,7 +76,7 @@ if(!$connection)
                             
         $resultado = mysqli_query($connection,$instruccion_SQL);
 
-        //$consulta = "SELECT * FROM tabla where id ='2'"; si queremos que nos muestre solo un registro en especifivo de ID
+       // $consulta = "SELECT * FROM tabla where id ='2'"; //si queremos que nos muestre solo un registro en especifivo de ID
         $consulta = "SELECT * FROM tabla_form";
         
 $result = mysqli_query($connection,$consulta);

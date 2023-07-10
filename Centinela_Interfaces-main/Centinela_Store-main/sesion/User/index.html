@@ -10,14 +10,18 @@
     <title>login CSS</title>
 </head>
 <body>
-    <form action="">
+    <form action="registro.php" name="" method="POST">
     <div class="container" id="container">
     <div class="form-container sign-up-container">
-        <form action="registro.php" name="" method="POST">
+        <form action="">
         <h1>Crea tu Cuenta</h1>
-        <input type="text" placeholder="Nombres y Apellidos" name="Usuario" id="Usuario" required/>
-        <input type="text" placeholder="Email" name="Correo" id="Correo" required/>
-        <input type="password" placeholder="Contraseña" name="Contraseña" id="Contraseña" required/>
+        <label for="nombre"></label>
+        <input type="text" placeholder="Usuario" name="nombre" id="nombre" required/>
+        <label for="usuario"></label>
+        <input type="password" placeholder="Contraseña" name="usuario" id="usuario" required/>
+        <label for="contraseña"></label>
+        <input type="text" placeholder="Nombre" name="contraseña" id="contraseña" required/>
+        
         <td align="center">
             <input
               type="submit"
@@ -26,16 +30,14 @@
               value="Registrarse"
             />
           </td>
+        
         </form>
     </div>
     <div class="form-container sign-in-container">
         <form action="#">
         <h1>Iniciar Sesión</h1>
-        <span>Ingresa tu email para ingresar</span>
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Contraseña" />
-        <a href="#">¿Olvidaste tu contraseña?</a>
-        <button>Iniciar sesión</button>
+        
+        <a href="../Index.php">Iniciar sesión</a>
         </form>
     </form>
     </div>
